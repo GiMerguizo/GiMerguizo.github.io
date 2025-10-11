@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-:root {
+:root, :root[data-theme='dark'] {
     --primary-color: #F0F0F0;
 
     --primary-bg-color: #111217;
@@ -11,6 +11,23 @@
     --text-color: #9A9A9C;
     --link-color: #9A9A9C;
     --icon-color: #C7C8C9;
+}
+
+:root[data-theme='light'] {
+    --primary-color: #0B0B0F;
+
+    --primary-bg-color: #E9E9E9;
+    --secondary-bg-color: #C7C8C9;
+    --border-color: #C7C8C9;
+
+    --title-color: #0B0B0F;
+    --text-color: #28292E;
+    --link-color: #28292E;
+    --icon-color: #56575A;
+}
+
+html[data-theme='light'] .brand__logo {
+  filter: invert(1); /*Inverte as cores da logo*/
 }
 
 * {
@@ -43,6 +60,11 @@ a {
   color: var(--text-color);
 }
 
+a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 i {
     color: var(--icon-color);
 }
@@ -71,6 +93,7 @@ i {
   font-size: 1.5rem;
   color: var(--primary-color);
   cursor: pointer;
+  transition: ease-in-out .5s;
 }
 
 .menu {
@@ -131,6 +154,16 @@ i {
     gap: 1rem;
 }
 
+footer {
+  margin-bottom: 5rem;
+}
+
+footer p {
+  font-size: .875rem;
+  text-align: center;
+  padding: 1rem;
+}
+
 /* Responsividade */
 @media (min-width: 768px) {
     .header {
@@ -151,6 +184,10 @@ i {
     .header__nav,
     .header__toggle {
         min-width: 30%;
+    }
+
+    footer {
+        margin: 0;
     }
 }
 
