@@ -1,5 +1,7 @@
 # Portfólio Front-end
 Construindo meu Portfólio Front-end do Zero com HTML, CSS e JavaScript
+<br>
+**Repositório Base:** [https://github.com/elidianaandrade/dio-lab-portfolio](https://github.com/elidianaandrade/dio-lab-portfolio)
 
 ## Etapas
 1. Definir Projeto e Analisar Referências
@@ -16,4 +18,3 @@ Construindo meu Portfólio Front-end do Zero com HTML, CSS e JavaScript
 
 ### Repositório e Figma
 - [Construindo seu Portfolio Front-end do Zero.fig](https://www.figma.com/design/NkndT2SbyHJZWLEsaM8Xn3/DIO-Lab-Portf%C3%B3lio?node-id=0-1&p=f&t=lHsBli3yXJeLRsle-0) - Protótipo no Figma
-- [https://github.com/elidianaandrade/dio-lab-portfolio](https://github.com/elidianaandrade/dio-lab-portfolio) - Repositório do projeto base
