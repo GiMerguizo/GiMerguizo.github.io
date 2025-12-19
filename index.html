@@ -34,11 +34,29 @@
                         <span class="menu__text">Contato</span>
                     </a>
                 </li>
+                <li class="menu__item">
+                    
+                </li>
             </ul>
         </nav>
         <div class="header__brand">
             <span class="brand__logo">Giovana Merguizo</span>
         </div>
+
+        <div class="header__dropdown">
+            <div class="dropdown">
+                <!--<button class="dropdown__button">
+                    Aplicações <i class="bi bi-chevron-down"></i>
+                </button>-->
+                <a class="menu__link" href="#">
+                    <span class="menu__text">Aplicações <i class="bi bi-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown__content">
+                    <li><a href="https://gimerguizo.github.io/meu_site_apps/">Meu site apps</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
@@ -87,8 +105,29 @@
                 </button>
             </a>
         </div>
-        <div class="main__content2">
+        <!--<div class="main__content2">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/heN17fmsiKs?si=psmOiNey0KSvYxvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>-->
+        <div class="main__content2">
+            <div class="article-preview">
+                <div class="article-preview__card">
+                    <div class="article-preview__image">
+                        <img id="capa-artigo" src="assets/images/capa_artigo_docker.png" alt="Capa do Artigo Docker">
+                    </div>
+                    
+                    <div class="article-preview__content">
+                        <div class="article-preview__header">
+                            <span class="badge">Artigo DIO</span>
+                            <h3>Primeiros Passos com Docker: 10 Comandos Básicos</h3>
+                        </div>
+                        <p>Neste artigo, exploro os conceitos fundamentais do Docker e apresento os comandos essenciais para quem está começando a trabalhar com containers.</p>
+                        <a href="https://web.dio.me/articles/primeiros-passos-com-docker-10-comandos-basicos-3001341415d1" target="_blank" class="btn btn--primary">
+                            <span>Ler Artigo Completo</span>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <section class="skills">
@@ -109,7 +148,7 @@
         <h2>Projetos</h2>
         <div class="projects__container">
             <div class="projects__card">
-                <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Capa josi's Box">
+                <img class="card__cover" src="assets/images/projects/capa_imersao_alura.png" alt="Capa josi's Box">
                 <div class="card__body">
                     <h3 class="card__title">Imersão DevOps + GCP</h3>
                     <p class="card__description">Aplicação de uma API com DevOps</p>
@@ -137,7 +176,7 @@
                 </div>
             </div>
             <div class="projects__card card--reverse">
-                <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Capa Archstil">
+                <img class="card__cover" src="assets/images/projects/capa_integracao_jenkins_grafana.png" alt="Capa Archstil">
                 <div class="card__body">
                 <h3 class="card__title">Monitoramento do Jenkins com Grafana</h3>
                 <p class="card__description">Aplicação de monitoramento do Jenkins com o Grafana + Prometheus</p>
@@ -165,7 +204,7 @@
                 </div>
             </div>
             <div class="projects__card">
-                <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Capa josi's Box">
+                <img class="card__cover" src="assets/images/projects/capa_devops_cubos.png" alt="Capa josi's Box">
                 <div class="card__body">
                     <h3 class="card__title">Desafio Técnico – Cubos DevOps</h3>
                     <p class="card__description">Resolução de desafio técnico aplicando conceitos de CI/CD, Docker e infraestrutura como código.</p>
