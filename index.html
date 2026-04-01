@@ -7,7 +7,8 @@
     <meta name="description" content="Portfólio de Giovana Merguizo, para compartilhar meus projetos e habilidades.">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -30,15 +31,42 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#contato">
+                    <a class="menu__link " href="#contato">
                         <span class="menu__text">Contato</span>
                     </a>
+                </li>
+                <li class="menu__item">
+                    <div class="header__dropdown">
+                      <div class="dropdown">
+                          <a class="menu__link" href="javascript:void(0)">
+                              <span class="menu__text">Aplicações</span><i class="fa fa-caret-down"></i>
+                          </a>
+                          <ul class="dropdown__content">
+                              <li><a href="https://gimerguizo.github.io/meu_site_apps/">Meu site apps</a></li>
+                          </ul>
+                      </div>
+                  </div>
                 </li>
             </ul>
         </nav>
         <div class="header__brand">
             <span class="brand__logo">Giovana Merguizo</span>
         </div>
+
+        <!--<div class="header__dropdown">
+            <div class="dropdown">
+                <button class="dropdown__button">
+                    Aplicações <i class="bi bi-chevron-down"></i>
+                </button>
+                <a class="menu__link" href="#">
+                    <span class="menu__text">Aplicações <i class="bi bi-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown__content">
+                    <li><a href="https://gimerguizo.github.io/meu_site_apps/">Meu site apps</a></li>
+                </ul>
+            </div>
+        </div>-->
+
         <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
@@ -73,7 +101,7 @@
     </nav>
     <main>
         <div class="main__content1">
-            <h1><b>Infraestrutura, Monitoramento & </b>Devops</h1>
+            <h1><b>Infra, Monitoramento & </b>Devops</h1>
             <p>Giovana Merguizo, Mairinque-SP, Analista de Suporte e entusiasta de DevOps.</p>
             <ul class="menu menu--social"> 
                 <li><a class="menu__link" href="https://github.com/GiMerguizo" target="_blank"><i class="menu__icon bi bi-github"></i></a></li>
@@ -87,8 +115,29 @@
                 </button>
             </a>
         </div>
-        <div class="main__content2">
+        <!--<div class="main__content2">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/heN17fmsiKs?si=psmOiNey0KSvYxvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>-->
+        <div class="main__content2">
+            <div class="article-preview">
+                <div class="article-preview__card">
+                    <div class="article-preview__image">
+                        <img id="capa-artigo" src="assets/images/capa_artigo_docker.png" alt="Capa do Artigo Docker">
+                    </div>
+                    
+                    <div class="article-preview__content">
+                        <div class="article-preview__header">
+                            <span class="badge">Artigo DIO</span>
+                            <h3>Primeiros Passos com Docker: 10 Comandos Básicos</h3>
+                        </div>
+                        <p>Neste artigo, exploro os conceitos fundamentais do Docker e apresento os comandos essenciais para quem está começando a trabalhar com containers.</p>
+                        <a href="https://web.dio.me/articles/primeiros-passos-com-docker-10-comandos-basicos-3001341415d1" target="_blank" class="btn btn--primary">
+                            <span>Ler Artigo Completo</span>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <section class="skills">
@@ -109,7 +158,7 @@
         <h2>Projetos</h2>
         <div class="projects__container">
             <div class="projects__card">
-                <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Capa josi's Box">
+                <img class="card__cover" src="assets/images/projects/capa_imersao_alura.png" alt="Capa josi's Box">
                 <div class="card__body">
                     <h3 class="card__title">Imersão DevOps + GCP</h3>
                     <p class="card__description">Aplicação de uma API com DevOps</p>
@@ -137,7 +186,7 @@
                 </div>
             </div>
             <div class="projects__card card--reverse">
-                <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Capa Archstil">
+                <img class="card__cover" src="assets/images/projects/capa_integracao_jenkins_grafana.png" alt="Capa Archstil">
                 <div class="card__body">
                 <h3 class="card__title">Monitoramento do Jenkins com Grafana</h3>
                 <p class="card__description">Aplicação de monitoramento do Jenkins com o Grafana + Prometheus</p>
@@ -165,7 +214,7 @@
                 </div>
             </div>
             <div class="projects__card">
-                <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Capa josi's Box">
+                <img class="card__cover" src="assets/images/projects/capa_devops_cubos.png" alt="Capa josi's Box">
                 <div class="card__body">
                     <h3 class="card__title">Desafio Técnico – Cubos DevOps</h3>
                     <p class="card__description">Resolução de desafio técnico aplicando conceitos de CI/CD, Docker e infraestrutura como código.</p>
@@ -247,16 +296,23 @@
         </div>
         <div class="row2">
             <h3>Experiências</h3>
+            <h4>Analista de Monitoramento JR</h4>
+            <span>Delfia. <time>Fev 2026 - até o momento</time></span>
+            <span>Monitoramento</span>
+            <ul class="about__list">
+                <li class="about__item">Abertura, registro e acompanhamento de chamados de incidentes;</li>
+                <li class="about__item">Observabilidade.</li>
+            </ul>
             <h4>Estagiária NOC</h4>
-            <span>Delfia. Out 2025 - até o momento</span>
-            <span>Atendimento de chamados N1.</span>
+            <span>Delfia. <time>Out 2025 - Fev 2026</time></span>
+            <span>Atendimento de chamados N1</span>
             <ul class="about__list">
                 <li class="about__item">Atendimento de chamados;</li>
-                <li class="about__item">Observabilidade</li>
+                <li class="about__item">Observabilidade.</li>
             </ul>
             <h4>Analista de Suporte JR</h4>
-            <span>AMIX - Serviços de Informática. Out 2023 - Out 2024</span>
-            <span>Suporte técnico e infraestrutura de TI para clientes corporativos, com foco em ambientes virtualizados e monitoramento de sistemas.
+            <span>AMIX - Serviços de Informática. <time>Out 2023 - Out 2024</time></span>
+            <span>Suporte técnico e infraestrutura de TI para clientes corporativos, com foco em ambientes virtualizados e monitoramento de sistemas
             </span>
             <ul class="about__list">
                 <li class="about__item">Atendimento de chamados;</li>

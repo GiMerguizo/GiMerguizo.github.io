@@ -1,6 +1,8 @@
 const toggleTheme = document.getElementById('toggleTheme');
 const rootHtml = document.documentElement;
 
+// Configuração do tema light/dark
+
 function changeTheme() {
     const cuurentTheme = rootHtml.getAttribute('data-theme');
 
@@ -24,9 +26,32 @@ accordionHeaders.forEach(header => {
     })
 })
 
+// Ativação dos links selecionados
+
+const menuLinks = document.querySelectorAll('.menu__link');
+
 menuLinks.forEach(item => {
   item.addEventListener("click", () => {
     menuLinks.forEach(i => i.classList.remove("active"));
     item.classList.add("active");
   })
 })
+
+// Configuração do dropdown do menu
+
+const dropdown = document.querySelector('.dropdown');
+const dropdownTrigger = document.querySelector('.dropdown .menu__link');
+
+if (dropdownTrigger) {
+  dropdownTrigger.addEventListener('click', (event) => {
+    // Adiciona ou remove a classe que mostra o menu
+    dropdown.classList.toggle('show-dropdown');
+  });
+}
+
+// Fecha o dropdown se o usuário clicar fora dele
+window.addEventListener('click', (event) => {
+  if (!dropdown.contains(event.target)) {
+    dropdown.classList.remove('show-dropdown');
+  }
+});
