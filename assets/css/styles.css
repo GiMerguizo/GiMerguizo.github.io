@@ -263,7 +263,10 @@ p {
     border-radius: 0.5rem;
 }
 
-.dropdown:hover .dropdown__content {
+/*.dropdown:hover .dropdown__content {
+    display: block;
+}*/
+.dropdown.show-dropdown .dropdown__content {
     display: block;
 }
 
@@ -663,7 +666,14 @@ footer p {
 
   .header__nav,
   .header__toggle {
+    flex: 1;
     min-width: 30%;
+  }
+  
+  .header__brand {
+    flex: 0 1 auto;
+    text-align: center;
+    justify-content: center;
   }
 
   h1 {

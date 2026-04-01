@@ -7,7 +7,8 @@
     <meta name="description" content="Portfólio de Giovana Merguizo, para compartilhar meus projetos e habilidades.">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -30,12 +31,21 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#contato">
+                    <a class="menu__link " href="#contato">
                         <span class="menu__text">Contato</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    
+                    <div class="header__dropdown">
+                      <div class="dropdown">
+                          <a class="menu__link" href="javascript:void(0)">
+                              <span class="menu__text">Aplicações</span><i class="fa fa-caret-down"></i>
+                          </a>
+                          <ul class="dropdown__content">
+                              <li><a href="https://gimerguizo.github.io/meu_site_apps/">Meu site apps</a></li>
+                          </ul>
+                      </div>
+                  </div>
                 </li>
             </ul>
         </nav>
@@ -43,11 +53,11 @@
             <span class="brand__logo">Giovana Merguizo</span>
         </div>
 
-        <div class="header__dropdown">
+        <!--<div class="header__dropdown">
             <div class="dropdown">
-                <!--<button class="dropdown__button">
+                <button class="dropdown__button">
                     Aplicações <i class="bi bi-chevron-down"></i>
-                </button>-->
+                </button>
                 <a class="menu__link" href="#">
                     <span class="menu__text">Aplicações <i class="bi bi-chevron-down"></i></span>
                 </a>
@@ -55,7 +65,7 @@
                     <li><a href="https://gimerguizo.github.io/meu_site_apps/">Meu site apps</a></li>
                 </ul>
             </div>
-        </div>
+        </div>-->
 
         <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
@@ -91,7 +101,7 @@
     </nav>
     <main>
         <div class="main__content1">
-            <h1><b>Infraestrutura, Monitoramento & </b>Devops</h1>
+            <h1><b>Infra, Monitoramento & </b>Devops</h1>
             <p>Giovana Merguizo, Mairinque-SP, Analista de Suporte e entusiasta de DevOps.</p>
             <ul class="menu menu--social"> 
                 <li><a class="menu__link" href="https://github.com/GiMerguizo" target="_blank"><i class="menu__icon bi bi-github"></i></a></li>
@@ -286,16 +296,23 @@
         </div>
         <div class="row2">
             <h3>Experiências</h3>
+            <h4>Analista de Monitoramento JR</h4>
+            <span>Delfia. <time>Fev 2026 - até o momento</time></span>
+            <span>Monitoramento</span>
+            <ul class="about__list">
+                <li class="about__item">Abertura, registro e acompanhamento de chamados de incidentes;</li>
+                <li class="about__item">Observabilidade.</li>
+            </ul>
             <h4>Estagiária NOC</h4>
-            <span>Delfia. Out 2025 - até o momento</span>
-            <span>Atendimento de chamados N1.</span>
+            <span>Delfia. <time>Out 2025 - Fev 2026</time></span>
+            <span>Atendimento de chamados N1</span>
             <ul class="about__list">
                 <li class="about__item">Atendimento de chamados;</li>
-                <li class="about__item">Observabilidade</li>
+                <li class="about__item">Observabilidade.</li>
             </ul>
             <h4>Analista de Suporte JR</h4>
-            <span>AMIX - Serviços de Informática. Out 2023 - Out 2024</span>
-            <span>Suporte técnico e infraestrutura de TI para clientes corporativos, com foco em ambientes virtualizados e monitoramento de sistemas.
+            <span>AMIX - Serviços de Informática. <time>Out 2023 - Out 2024</time></span>
+            <span>Suporte técnico e infraestrutura de TI para clientes corporativos, com foco em ambientes virtualizados e monitoramento de sistemas
             </span>
             <ul class="about__list">
                 <li class="about__item">Atendimento de chamados;</li>
