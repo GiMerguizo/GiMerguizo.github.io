@@ -1,0 +1,318 @@
+/* Arquivo: global.css */
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/assets/fonts/neue-machina-regular.otf');
+}
+
+body {
+  background-color: #050505;
+  color: #fff;
+   margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  
+
+  background-image: 
+    /* Mancha Rosa no topo esquerdo */
+    radial-gradient(circle at 0% 0%, rgba(255, 105, 180, 0.4) 0%, transparent 50%),
+    
+    /* Mancha Azul no canto inferior esquerdo */
+    radial-gradient(circle at 0% 100%, rgba(41, 98, 255, 0.5) 0%, transparent 50%),
+    
+    /* Mancha Vermelha/Magenta no canto inferior direito */
+    radial-gradient(circle at 100% 100%, rgba(220, 20, 60, 0.4) 0%, transparent 60%),
+    
+    /* Um tom roxo sutil no lado direito para misturar */
+    radial-gradient(circle at 90% 50%, rgba(138, 43, 226, 0.2) 0%, transparent 50%);
+    
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+}
+
+/* Arquivo: header.css */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.header .title {
+  font-family: 'Neue Machina', 'Space Grotesk', sans-serif;
+  text-align: center;
+}
+
+.header .points {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.header .points i {
+  width: .125rem;
+  height: .125rem;
+  margin: .125rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.information p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: .5rem;
+  font-size: 1.125rem;
+}
+
+.information i {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.2rem;
+  background-size: contain;
+  margin-right: .5rem;
+  color: #55569E;
+}
+
+/* Arquivo: acordeon.css */
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  transition: .25s;
+}
+
+.acordeon.open,
+.acordeon:hover {
+  background-color: #55569E;
+  border-color: #55569E;
+}
+
+.acordeon .trigger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.acordeon .trigger h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.acordeon .trigger:hover {
+  cursor: pointer;
+}
+
+.acordeon .content {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+.acordeon.open .content {
+  display: block;
+  height: auto;
+  opacity: 1;
+  padding: 0rem 1rem 1rem 2rem;
+}
+
+/*Arquivo: languages.css*/
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.languages li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.languages li i {
+  color: #fff;
+  margin-right: .5rem;
+}
+
+/* portfolio.css */ 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.portfolio li i {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.2rem;
+  background-size: contain;
+  margin-right: .5rem;
+}
+
+.portfolio li .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+/* experience.css */
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience li {
+  margin-bottom: .725rem;
+}
+
+.experience li .period {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience i {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.2rem;
+  background-size: contain;
+  margin-right: .25rem;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .tools ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills .tools ul li img {
+  /* max-width: 50px; */
+  margin: 0 .5rem;
+}
+
+.skills .soft ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.skills .soft ul li {
+  margin-left: 2rem;
+  padding: .5rem;
+}
+
+/* Dividir nos arquivos*/
+
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 1024px;
+    margin: 1rem auto;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo information"
+  }
+  
+  .header .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
+  
+  .header .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 300px;
+  }
+  
+  .header .information {
+    grid-area: information;
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
